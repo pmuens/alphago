@@ -4,13 +4,21 @@ This repository contains a reference implementation of the [AlphaGo](https://dee
 
 ## How to play
 
-### Bot vs. Bot
+### Go
+
+#### Bot vs. Bot
 
 Run `python bot_v_bot.py` to let 2 Bots play against each other.
 
-### Human vs. Bot
+#### Human vs. Bot
 
 Run `python human_v_bot.py` to play against a bot.
+
+### Tic-Tac-Toe
+
+#### Human vs. Bot
+
+Run `python play_ttt.py` to play against an [unbeatable](https://en.wikipedia.org/wiki/Minimax) bot.
 
 ## Resources
 
