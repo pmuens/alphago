@@ -12,7 +12,7 @@ Run `python bot_v_bot.py` to let 2 Bots play against each other.
 
 #### Human vs. Bot
 
-Run `python pruned_go.py` to play against a bot.
+Run `python alpha_beta_go.py` to play against a bot.
 
 ### Tic-Tac-Toe
 
