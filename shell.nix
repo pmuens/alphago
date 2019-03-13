@@ -8,5 +8,7 @@ stdenv.mkDerivation rec {
   buildInputs = [
     python36
     python36Packages.six
+    python36Packages.numpy
+    python36Packages.matplotlib
   ];
 }
