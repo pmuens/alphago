@@ -1,5 +1,5 @@
 from dlgo import agent
-from dlgo import goboard_slow as goboard
+from dlgo import goboard_fast as goboard
 from dlgo import gotypes
 from dlgo.utils import print_board, print_move, point_from_coords
 from six.moves import input
