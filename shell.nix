@@ -10,5 +10,7 @@ stdenv.mkDerivation rec {
     python36Packages.six
     python36Packages.numpy
     python36Packages.matplotlib
+    python36Packages.Keras
+    python36Packages.tensorflow
   ];
 }
