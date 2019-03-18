@@ -9,7 +9,7 @@ from dlgo.utils import print_board, print_move
 def generate_game(board_size, rounds, max_moves, temperature):
     boards, moves = [], []
 
-    encoder = get_encoder_by_name('oneplane', board_size)
+    encoder = get_encoder_by_name('simple', board_size)
 
     game = goboard.GameState.new_game(board_size)
 
