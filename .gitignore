@@ -1,3 +1,8 @@
+data/**
+checkpoints/**
+kgs_index.html
+test_samples.py
+
 # General
 .DS_Store
 .AppleDouble
