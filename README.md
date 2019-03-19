@@ -20,6 +20,10 @@ Run `python mcts_go.py` to play against a bot.
 
 Run `python play_ttt.py` to play against an [unbeatable](https://en.wikipedia.org/wiki/Minimax) bot.
 
+## Reinforcement Learning
+
+Run `self_play.py --board-size=19 --learning-agent=./agents/your_bot.h5 --experience-out ./experiences/experience.h5` to let a bot play against itself and store experiences gathered during self play.
+
 ## Resources
 
 - [Book - Deep Learning and the Game of Go](https://www.manning.com/books/deep-learning-and-the-game-of-go)
