@@ -1,6 +1,7 @@
 agents/**
 data/**
 checkpoints/**
+experiences/**
 kgs_index.html
 test_samples.py
 
