@@ -22,7 +22,7 @@ Run `python play_ttt.py` to play against an [unbeatable](https://en.wikipedia.or
 
 ## Reinforcement Learning
 
-Run `python self_play.py --board-size=19 --learning-agent=./agents/your_bot.h5 --experience-out ./experiences/experience.h5` to let a bot play against itself and store experiences gathered during self play.
+Run `python self_play_pg.py --board-size=19 --learning-agent=./agents/your_bot.h5 --experience-out ./experiences/experience.h5` to let a bot play against itself and store experiences gathered during self play.
 
 Run `python train_pg.py --learning-agent=./agents/deep_bot.h5 --agent-out=./agents/deep_bot_improved.h5 ./experiences/experience.h5` to use experience data for agent improvements via Deep Reinforcement Learning.
 
