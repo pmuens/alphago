@@ -31,7 +31,7 @@ def main():
             batch_size=batch_size)
 
     with h5py.File(updated_agent_filename, 'w') as updated_agent_outf:
-        learn_agent.serialize(updated_agent_outf)
+        learning_agent.serialize(updated_agent_outf)
 
 if __name__ == '__main__':
     main()
