@@ -22,11 +22,19 @@ Run `python play_ttt.py` to play against an [unbeatable](https://en.wikipedia.or
 
 ## Reinforcement Learning
 
-Run `python self_play_pg.py --board-size=19 --learning-agent=./agents/your_bot.h5 --experience-out ./experiences/experience.h5` to let a bot play against itself and store experiences gathered during self play.
+1. Run `python init_ac_agent.py --board-size 9 --output-file ./agents/ac_v1.h5`
 
-Run `python train_pg.py --learning-agent=./agents/deep_bot.h5 --agent-out=./agents/deep_bot_improved.h5 ./experiences/experience.h5` to use experience data for agent improvements via Deep Reinforcement Learning.
+1. Run `python self_play_ac.py --board-size 9 --learning-agent ./agents/ac_v1.h5 --num-games 5000 --experience-out ./experiences/exp_0001.h5` to let a bot play against itself and store experiences gathered during self play.
 
-Run `python eval_pg_bot.py --agent1=./agents/deep_bot_improved.h5 --agent2=./agents/deep_bot.h5` to check whether the new bot is stronger.
+1. Run `python train_ac.py --learning-agent ./agents/ac_v1.h5 --agent-out ./agents/ac_v2.h5 ./--lr 0.01 --bs 1024 experiences/exp_0001.h5` to use experience data for agent improvements via Deep Reinforcement Learning.
+
+1. Run `python eval_ac_bot.py --agent1 ./agents/ac_v2.h5 --agent2 ./agents/ac_v1.h5 --num-games 100` to check whether the new bot is stronger.
+
+If the new agent is stronger start with it at 2.
+
+Otherwise go to 2. again to generate more training data. Use multiple experience data files in 3.
+
+Rinse and repeat.
 
 ## Resources
 
